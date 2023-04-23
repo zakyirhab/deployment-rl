@@ -35,8 +35,6 @@ peta_3 = ['SHFF','FHFH','FFFH','HHFG']
 peta_4 = ['SFFF','HHFF','FFFF','HFFG']
 peta_5 = ['SFFH','FFFH','HFFH','HHFG']
 
-run_with_ngrok(app)
-
 # =[Routing]=====================================
 
 # [Routing untuk Halaman Utama atau Home]	
@@ -206,6 +204,7 @@ if __name__ == '__main__':
 	Q_table_all = pickle.load(open('Q_table_Frozen_Lake.model', 'rb'))
 
 	# Run Flask di localhost 
+	run_with_ngrok(app)
 	app.run()
 	
 	
